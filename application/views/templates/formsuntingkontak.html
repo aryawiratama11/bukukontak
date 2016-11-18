@@ -1,0 +1,21 @@
+<a href="/#/home" class="btn btn-flat btn-large"><i class="material-icons left">arrow_back</i> <b class="red-text">Kembali</b></a>
+
+<div class="row">
+  <div class="col s2"></div>
+  <div class="input-field col s3">
+    <input type="text" class="validate" id="suntingnama" ng-model="edit.nama">
+    <label for="suntingnama">Nama</label>
+  </div>
+  <div class="input-field col s3">
+    <input type="text" class="validate" id="suntingemail" ng-model="edit.email">
+    <label for="suntingemail">Email</label>
+  </div>
+  <div class="input-field col s3">
+    <label for="suntingnohp">Nomor HP</label>
+    <input type="text" class="validate" id="suntingnohp" ng-model="edit.nohp">
+  </div>
+</div>
+<button type="button" class="btn waves-effect waves-light right" ng-click="suntingkontak(edit)">
+  Sunting
+  <i class="material-icons right">send</i>
+</button>

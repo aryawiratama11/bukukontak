@@ -1,0 +1,28 @@
+<a href="/#/tambahkontak" class="btn-floating btn-large waves-effect waves-light blue right"><i class="material-icons large">add</i></a>
+<table>
+  <thead>
+    <tr>
+      <th>Nomor</th>
+      <th>Nama</th>
+      <th>Email</th>
+      <th>Nomor HP</th>
+      <th>Aksi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="kontak in kontaks">
+      <td>{{$index+1}}</td>
+      <td>{{kontak.nama}}</td>
+      <td>{{kontak.email}}</td>
+      <td>{{kontak.nohp}}</td>
+      <td>
+        <button class="btn waves-effect waves-light green" ng-click="ambilkontak(kontak.id)">
+          <i class="material-icons">edit</i>
+        </button>
+        <button class="btn waves-effect waves-light red" ng-click="hapuskontak(kontak.id)">
+          <i class="material-icons">delete</i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
